@@ -51,15 +51,44 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p>Area: w X l </p>
                         <div class="flex">
-                            <!-- rectangle widht -->
-                            <input class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="w"> <span
-                                class="mr-4 ml-2">cm</span>
+                            <!-- rectangle width -->
+                            <input class="w-24 text-2xl p-2 rounded-md" id="rectangle-width" type="text"
+                                placeholder="w"> <span class="mr-4 ml-2">cm</span>
                             <!-- rectangle length -->
-                            <input class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="l"> <span
-                                class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-md" id="rectangle-length" type="text"
+                                placeholder="l"> <span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="rectangle-area">0</span> <span>cm <sup>2</sup></span>
+                            </p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- parallelogram card -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="images/parallelogram.png" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area: b X h </p>
+                        <div class="flex">
+                            <!-- parallelogram base -->
+                            <input class="w-24 text-2xl p-2 rounded-md" id="parallelogram-base" type="text"
+                                placeholder="b"> <span class="mr-4 ml-2">cm</span>
+                            <!-- parallelogram height -->
+                            <input class="w-24 text-2xl p-2 rounded-md" id="parallelogram-height" type="text"
+                                placeholder="h"> <span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="parallelogram-area">0</span> <span>cm <sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateParallelogramArea()"
+                                class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -72,6 +101,7 @@
     </main>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle.js"></script>
+    <script src="scripts/paralellogram.js"></script>
 </body>
 
 </html>
